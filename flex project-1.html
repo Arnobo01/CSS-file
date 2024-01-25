@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f5f5f5;
+}
+.head{ background-color: blue;
+    width: 100%;
+height: 2%;
+padding: 1%;
+text-align: center; }
+
+.nav{ background-color: green;
+    width: 100%;
+height: 2%;
+padding: 1%;
+text-align: center; }
+
+
+
+
+.foot{ background-color: black;
+    width:100%;
+    height: 2%;
+padding: 1%;
+text-align: center; }
+
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px;
+  height: calc(100vh - 20px);
+}
+
+.container {
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+ .item {
+  color: #fff;
+  background-color: #cccccc;
+  padding: 10px;
+  
+}
+
+  .a {
+  background-color: violet;
+}
+
+.b {
+  background-color: yellowgreen;
+}
+
+.c {
+  background-color: royalblue;
+}
+
+
+
+
+
+
+
+
+
+.container-1-1 {
+        display: flex;
+        flex-direction:column ;
+        flex-basis: 100%;
+        
+      }
+      .container-1-2 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+      }
+      .item {
+        flex-grow: 1;
+      }
+
+      @media (min-width: 768px){
+
+        .container-1-1 {
+        
+          flex-basis: 40%;
+        }
+
+        .container-1-2 {
+          flex-direction:column;
+          flex-wrap: wrap;
+          flex-basis: 60%;
+          
+        }
+
+
+        .b {
+          flex-basis: 50%;
+        }
+        .c {
+          flex-basis: 50%;}
+
+      }
+
+
+      
+
+
+
+</style>
+
+
+</head>
+<body>
+  <div class="head"> Header</div>
+  <div class="nav">  Navigation</div>
+    <div class="wrap"> <div class="container">
+    <div class="container-1-1">
+        <div class="item a">aside</div>
+      </div>
+
+    
+        <div class="container-1-2">
+          <div class="item b">content</div>
+          <div class="item c">section</div>
+          
+        </div>
+    </div>
+    </div>
+    <div class="foot"> Footer</div>
+</body>
+</html>
